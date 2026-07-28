@@ -172,7 +172,7 @@ def ShowSerach_by_price():
     searchPriceEntry.grid(row=0, column=1, padx=5, pady=5)
     
     def do_search_by_price():
-        price = float(searchPriceEntry.get())
+        price = int(searchPriceEntry.get())
         result = myShop.search_product_by_price(price)
         #این میره ببینه برای یه اسم که از ورودی دریافت میشه چه کاری بکند 
         #و برای همین میره به تابع سرچ محصول اونجا که گفتیم هربرو داخل لیست محصولات 
