@@ -42,6 +42,12 @@ class anbar:
             p=product(name,price ,pdate , edate , qty)
             self.products.append(p)
             msg.showinfo(title="Success",message= "Product added!")
+            
+            Name.delete(0, END)
+            Price.delete(0, END)
+            PDate.delete(0, END)
+            EDate.delete(0, END)
+            QTy.delete(0, END)
         except:
             msg.showerror("error" , "invalid input!")
             
